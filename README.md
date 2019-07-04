@@ -640,3 +640,855 @@ O incluso, puedes hacer que un programa continue una canción en texto.
     micumpleanos=Cancion(["...que cantaba el rey David," " hoy por ser dia de tu santo," " te las cantamos a ti."])
     micumpleanos.cantame()
     
+### Ejercicios hechos en clase.
+ 
+#### Ejercicio 1
+	nombre='Marco Antonio Becerra Ortega'
+	calle='Carrera Naucalpan Toluca #794'
+	colonia='San Rafael Chamapa'
+	municipio='Naucalpan'
+	estado='Estado de Mexico'
+	cp=53670
+	print( nombre,'\n',calle,'\n', colonia,'\n', municipio,'\n', estado,'\n', cp)
+![ejercicio1](https://user-images.githubusercontent.com/52546998/60686928-1908a200-9e71-11e9-85ed-befccb71e491.PNG)
+
+#### Ejercicio 2
+	print('ingresa tu nombre')
+	nombre=input()
+	print('hola ' + nombre + ' :3')
+![ejercicio2](https://user-images.githubusercontent.com/52546998/60686945-2c1b7200-9e71-11e9-8ebd-3323001d1d08.PNG)
+
+#### Ejercicio 3
+	print('Programa para calcular area')
+	Largo=float(input('Ingresa el largo de la habitacion '))
+	Ancho=float(input('Ingrese el ancho de la habitacion '))
+	print('El Largo de tu habitacion es:', Largo, 'metros','\n', 'El ancho de tu habitacion es:' ,Ancho,'metros','\n', 'El area de tu habitacion es:',Largo*Ancho,'metros cuadrados')  
+![ejercicio3](https://user-images.githubusercontent.com/52546998/60687220-d9db5080-9e72-11e9-9ec8-ee9c0fad8c72.PNG)
+
+#### Ejercicio 4
+	l=float(input('indica el largo de una cancha de futbol en metros: '))
+	a=float(input('indica el ancho de una cancha de futbol en metros: '))
+	areax=l*a
+	area=float(areax*0.000247105)
+	print('El area de una cancha de futbol es de ', area, 'acres')
+![ejercicio4](https://user-images.githubusercontent.com/52546998/60688205-5b35e180-9e79-11e9-8529-256282d1cace.PNG)
+
+#### Ejercicio 5
+	print('Recicle Botellas')
+	un_litro=int(input('Cuantas botellas vas a poner '))
+	mas_litro=int(input('Cuantas botellas vas a poner de mas litros '))
+	pago=(un_litro*mas_litro)
+	pagom=(un_litro*1)
+	pagon=float=(mas_litro*2.50)
+	pagot=(pagom+pagon)
+	print('se te va a dar $',pagot,'pesos')
+![ejercicio5](https://user-images.githubusercontent.com/52546998/60688263-ba93f180-9e79-11e9-9f7d-563dfffc80a1.PNG)
+ 
+#### Ejercicio 6
+	print('Bienvenido al restaurante Juanito')
+	print('Carretera Naucalpan Toluca #794 Col. San Rafael Chamapa  CP. 53660')
+	print('Tu orden fue de: ')
+	comida=input()
+	costo=50
+	print('Tu ','comida', 'vale $' ,costo)
+	iva=0.16
+	con_iva=float(costo*iva)
+	print('Con IVA es $ ',con_iva)
+	prop=0.10
+	con_prop=float(costo*prop)
+	print('Con propina son $' ,con_prop)
+	total=con_iva+con_prop
+	tot=costo+total
+	print('Tu total es de $' ,tot)
+![ejercicio6](https://user-images.githubusercontent.com/52546998/60688268-c384c300-9e79-11e9-960d-b4cd2f6fef7d.PNG)
+
+
+#### Ejercicio 7
+	n=int(input('Indique un numero :'))
+	s=int((n*(n+1))/2)
+	print('El resultado es ', s)
+![ejercicio7](https://user-images.githubusercontent.com/52546998/60688274-cda6c180-9e79-11e9-85b3-a6b8ab4d1446.PNG)
+
+#### Ejercicio 8
+	w=int(input('Indique el numero de widget  :'))
+	g=int(input('Indique el numero de gizmos  :'))
+	p1=w*75
+	p2=g*112
+	pt=int(p1+p2)
+	print('El peso total de los productos adquiridos es de ', pt , 'gramos')
+![ejercicio8](https://user-images.githubusercontent.com/52546998/60688276-d26b7580-9e79-11e9-94a1-d082fd5493e8.PNG)
+
+#### Ejercicio 9
+	s=float(input('Indique la cantidad de saldo que tiene la cuenta :'))
+	s1=float(s*0.4)+s
+	s2=float((s1*0.4)*2)+s
+	s3=float((s2*0.4)*3)+s
+	print(' El saldo que se tendra en la primer aunalidad es de ', s1 , 'pesos','\n',
+	'El saldo que se tendra en la segunda aunalidad es de ', s2, 'pesos','\n',
+	'El saldo que se tendra en la tercera aunalidad es de ', s3, 'pesos')
+![ejercicio9](https://user-images.githubusercontent.com/52546998/60688279-d6979300-9e79-11e9-8a64-effb35794203.PNG)
+
+#### Ejercicio 10
+	import math
+	a=int(input('indique la variable a :'))
+	b=int(input('indique la variable b :'))
+	r1=a+b
+	r2=b-a
+	r3=a*b
+	r4=a//b
+	r5=a%b
+	r6=a**b
+	print(' la suma de a+b es ', r1, '\n',
+	'La resta de b-a es ', r2, '\n' ,
+	'El producto de a y b es ', r3, '\n',
+	'El cociente cuando a es dividido por b es  ', r4, '\n',
+	'El residuo cuando a es dividido por b es  ', r5, '\n',
+	'El resultado de a a la b  ', r6, '\n',
+	'El resultado de log10 a es ', math.log(a), '\n')
+![ejercicio10](https://user-images.githubusercontent.com/52546998/60688282-db5c4700-9e79-11e9-8478-1390f8057c67.PNG)
+ 
+#### Ejercicio 11
+	g=float(input('Indique el MPG :'))
+	l=float(235.21/g)
+	print('La convercion de MPG a litros/100km es' , l)
+![ejercicio11](https://user-images.githubusercontent.com/52546998/60688283-e020fb00-9e79-11e9-814f-5e17dde7473d.PNG)
+
+#### Ejercicio 12
+	import math
+	t1=int(input('Indique la latitud del primer punto de la tierra en grados :'))
+	g1=int(input('Indique la longitud del primer punto de la tierra en grados :'))
+	t2=int(input('Indique la latitud del segundo punto de la tierra en grados :'))
+	g2=int(input('Indique la longitud del segundo punto de la tierra en grados :'))
+	st1=(math.sin(t1))
+	st2=(math.sin(t2))
+	ct1=(math.cos(t1))
+	ct2=(math.cos(t2))
+	cg12=(math.cos(g1-g2))
+	ac=(math.acos(st1*st2+ct1*ct2*cg12))
+	d=float(6371.01*ac)
+	print('La distancia entre los puntos que siguen la superficie de la tierra es ',"{:.2f}".format(d) , 'Km')
+![ejercicio12](https://user-images.githubusercontent.com/52546998/60688286-e44d1880-9e79-11e9-9410-0eb5bd3086cc.PNG)
+
+#### Ejercicio 13
+	import math
+	r=float(input('Indique el radio de un circulo :'))
+	p=math.pi
+	a=p*(r**2)
+	v=((4/3)*p*(r**3))
+	print('El area de un circulo es ',"{:.2f}".format(a),'\n', 'El volumen de una esfera es ',"{:.2f}".format(v))
+![ejercicio13](https://user-images.githubusercontent.com/52546998/60688288-e7e09f80-9e79-11e9-893d-683d022c4c8e.PNG)
+
+#### Ejercicio 14
+	d=int(input('indique los dias :'))
+	h=int(input('indique las horas :'))
+	m=int(input('indique los minutos :'))
+	s=int(input('indique los segundos :'))
+	t=s+(m*60)+(h*3600)+(d*86400)
+	print('El tiempo trascurrido es  ', t ,'segundos')
+![ejercicio14](https://user-images.githubusercontent.com/52546998/60688291-eb742680-9e79-11e9-88c3-c5d735ac1a34.PNG)
+
+#### Ejercicio 15
+	from time import asctime
+	print(asctime())
+![ejercicio15](https://user-images.githubusercontent.com/52546998/60688297-f16a0780-9e79-11e9-85f2-7d6e9970125e.PNG)
+
+#### Ejercicio 16
+	import turtle
+	import time
+	from math import sin, pi
+	from random import random
+	def circle_dance(population=11, resolution=480, loops=1, flip=0, lines=0):
+	    population = int(population)
+	    resolution = int(resolution)
+	    radius = 250
+	    screen = turtle.Screen()
+	    screen.tracer(0)
+	    if lines:
+	        arrange_lines(population, radius)
+	    turtles = [turtle.Turtle() for i in range(population)]
+	    for i in range(population):
+	        dancer = turtles[i]
+	        make_dancer(dancer, i, population)
+	    animate(turtles, resolution, screen, loops, flip, radius)
+	def arrange_lines(population, radius):
+	    artist = turtle.Turtle()
+	    for n in range(population):
+	        artist.penup()
+	        artist.setposition(0, 0)
+	        artist.setheading(n / population * 180)
+	        artist.forward(-radius)
+	        artist.pendown()
+	        artist.forward(radius * 2)
+	    artist.hideturtle()
+	def make_dancer(dancer, i, population):
+	    dancer.setheading(i / population * 180)
+	    dancer.color(random_turtle_colour())
+	    dancer.penup()
+	    dancer.shape('turtle')
+	    dancer.turtlesize(2)
+	def random_turtle_colour():
+	    return random() * 0.9, 0.5 + random() * 0.5, random() * 0.7
+	def animate(turtles, resolution, screen, loops, flip, radius):
+	    delay = 4 / resolution      # 4 seconds per repetition
+	    while True:
+	        for step in range(resolution):
+        	    timer = time.perf_counter()
+	            phase = step / resolution * 2 * pi
+	            draw_dancers(turtles, phase, screen, loops, flip, radius)
+	            elapsed = time.perf_counter() - timer
+	            adjusted_delay = max(0, delay - elapsed)
+	            time.sleep(adjusted_delay)
+	def draw_dancers(turtles, phase, screen, loops, flip, radius):
+	    population = len(turtles)
+	    for i in range(population):
+	        individual_phase = (phase + i / population * loops * pi) % (2*pi)
+	        dancer = turtles[i]
+	        if flip:
+	            if pi / 2 < individual_phase <= 3 * pi / 2:
+	                dancer.settiltangle(180)
+	            else:
+	                dancer.settiltangle(0)
+	        distance = radius * sin(individual_phase)
+	        dancer.setposition(0, 0)
+	        dancer.forward(distance)
+	    screen.update()
+	if __name__ == '__main__':
+	    import sys
+	    circle_dance(*(float(n) for n in sys.argv[1:]))
+![ejercicio16](https://user-images.githubusercontent.com/52546998/60688299-f5962500-9e79-11e9-9b43-76236af26171.PNG)
+	   
+#### Ejercicio 17 
+	entero=int(input('Introdusca un numero entero :'))
+	par=entero%2
+	if par == 0:
+	    print('El numero es par')
+	else:
+	    print('El numero no es par')
+![ejercicio17](https://user-images.githubusercontent.com/52546998/60688303-fa5ad900-9e79-11e9-994d-5f427fbfbcb8.PNG)
+    
+#### Ejercicio 18
+	humanos=float(input('Indique la edad humana :'))
+	perros1=((humanos-2)*(4))+21
+	perros2=humanos*10.5
+	if humanos > 2:
+	    print('la conversion de anos humanos a perros es de ',perros1)
+	elif humanos < 0:
+	    print('favor de ingresar los datos de forma correcta')
+	else: 
+	    print('la conversion de edad humana a perros es de ',perros2)
+![ejercicio18](https://user-images.githubusercontent.com/52546998/60688310-047cd780-9e7a-11e9-9e60-ba11ccb8fde8.PNG)
+	    
+#### Ejercicio 19
+	import numpy as np
+	import matplotlib.pyplot as plt
+	
+	#creando un vector nuerico
+	y=int(input('que quieres graficar:\n 1 seno\n 2 coseno\n 3 tangente\n'))
+	
+	x=np.arange(100)
+	y1=np.sin(x)
+	y2=np.cos(x)
+	y3=np.tan(x)
+	
+	if y == 1:
+	    plt.plot(x,y1)
+	elif y == 2:
+	    plt.plot(x,y2)
+	elif y == 3:
+	    plt.plot(x,y3)
+	else:
+	    print('Ingrese la opcion adecuada')
+	
+	#graficar
+	plt.show()
+![ejercicio19](https://user-images.githubusercontent.com/52546998/60688311-0b0b4f00-9e7a-11e9-8f9c-1fc792e7476e.PNG)
+	
+#### Ejercicio 20
+	c=str(input('Indique la letra del tabero'))
+	f=int(input('Indique el numero del tabero'))
+	x=('c'*f)
+	x=(len(x))
+	print(x)
+![ejercicio20](https://user-images.githubusercontent.com/52546998/60688315-11013000-9e7a-11e9-8141-ef06e7e984b2.PNG)
+
+#### Ejercicio 21
+	for celcius in range(0,101,10):
+	    farenheit = (1.8*celcius)+32
+	    print(celcius, 'gC','|', farenheit, 'gF')
+![ejercicio21](https://user-images.githubusercontent.com/52546998/60688320-16f71100-9e7a-11e9-897d-d9a6fc8b7cfb.PNG)
+    
+#### Ejercicio 22
+	for precio in range(4,200,5):
+	    precio=(precio+0.95)
+	    descuento=(precio*0.60)
+	    precio1=precio-descuento
+	    print(precio,"|","{:.2f}".format(descuento),"|","{:.2f}".format(precio1))
+![ejercicio22](https://user-images.githubusercontent.com/52546998/60688323-1b232e80-9e7a-11e9-9842-07ec07cefebc.PNG)
+
+#### Ejercicio 23
+	print(' ',1,2,3,4,5,6,7,8,9,10)
+	for a in range(1,11,1):
+	    x=a*1
+	    b=a*2
+	    c=a*3
+	    d=a*4
+	    e=a*5
+	    f=a*6
+	    g=a*7
+	    h=a*8
+	    i=a*9
+	    j=a*10
+	    print(x,a ,b ,c ,d ,e ,f ,g ,h ,i ,j)
+![ejercicio23](https://user-images.githubusercontent.com/52546998/60688329-1f4f4c00-9e7a-11e9-8171-1dc4ae65ac06.PNG)
+    
+#### Ejercicio 24
+	def tarifa(kilometros):
+	    precio=7.25+(7*kilometros)
+	    if precio < 40:
+	        precio=40
+	    return precio
+	kilometros=float(input('Indique los kilometros :'))
+	n=tarifa(kilometros)
+	print(n)
+![ejercicio24](https://user-images.githubusercontent.com/52546998/60688337-26765a00-9e7a-11e9-8c76-5fe030db2e56.PNG)
+
+#### Ejercicio 25
+	def tarifa(producto):
+	  
+	    tarifa=150+45*(producto-1)
+	    
+	    if producto == 1:
+	        tarifa=150
+	    elif producto == 0:
+	        tarifa=0
+	        
+	    return tarifa
+	producto=float(input('Ingresa el numero1 de productos :'))
+	total=tarifa(producto)
+	
+	print(total)
+![ejercicio25](https://user-images.githubusercontent.com/52546998/60688340-2c6c3b00-9e7a-11e9-88fb-2d8c65b600ee.PNG)
+
+#### Ejercicio 26
+	def producto(envio):
+	    producto = 150+45*(envio-1)
+	    if envio==1:
+	        return 150
+	    elif envio==0:
+	        return 0
+	    return producto
+	
+	envio=float(input('Cuantos articulos vas a pedir? '))
+	b=producto(envio)
+	print (b)
+![ejercicio26](https://user-images.githubusercontent.com/52546998/60688345-30985880-9e7a-11e9-8f8d-e9225a603431.PNG)
+
+#### Ejercicio 27
+	import turtle
+	ventana=turtle.Screen()
+	alex=turtle.Turtle()
+	alex.forward(100)
+	alex.left(90)
+	alex.forward(100)
+	alex.left(90)
+	alex.forward(100)
+	alex.left(90)
+	alex.forward(100)
+	alex.left(90)
+	alex.forward(100)
+	ventana.mainloop()
+![ejercicio27](https://user-images.githubusercontent.com/52546998/60688349-342bdf80-9e7a-11e9-8797-00622daecb3f.PNG)
+
+#### Ejercicio 28
+	import turtle
+	ventana=turtle.Screen()
+	ventana.bgcolor("yellow")
+	ventana.title("Hola, Kary bebe")
+	kary=turtle.Turtle()
+	kary.color("blue")
+	kary.pensize(5)
+	kary.forward(100)
+	kary.left(120)
+	kary.forward(100)
+	ventana.mainloop() 
+![ejercicio28](https://user-images.githubusercontent.com/52546998/60688351-3857fd00-9e7a-11e9-8f9c-142cb8cebc16.PNG)
+
+#### Ejercicio 29
+	#Modificar el programa anterior para que antes de crear la ventana se le pregunte al usuario que color de fondo desea. Debe de guardar la respuesta del usuario en una variable y modificar el color de fondo de la ventana de acuerdo a los deceos del usuario.
+
+	a=input('Escoje un color de los siguientes para la ventana: brown chocolate coral red pink purple blue green yellow black :  ')
+	
+	import turtle
+	ventana=turtle.Screen()
+	ventana.bgcolor(a)
+	ventana.title("Hola amor")
+	
+	kary=turtle.Turtle()
+	kary.shape("turtle")
+	kary.color("blue")
+	kary.pensize(10)
+	kary.forward(100)
+	kary.left(120)
+	kary.forward(100)
+	ventana.mainloop() 
+![ejercicio29](https://user-images.githubusercontent.com/52546998/60688355-3c841a80-9e7a-11e9-93ca-8c7032abacf1.PNG)
+
+#### Ejercicio 30
+	a=input('Escoje un color de los siguientes para la ventana: brown chocolate coral red pink purple blue green yellow black :  ')
+
+	b=input('Escoje un color de los siguientes para la tortuga 1: brown chocolate coral red pink purple blue green yellow black :  ')
+
+	c=input('Escoje un color de los siguientes para la tortuga 2: brown chocolate coral red pink purple blue green yellow black :  ')
+
+	import turtle
+	ventana=turtle.Screen()
+	ventana.bgcolor(a)
+	ventana.title("Hola, Kary bebe")
+
+	kary=turtle.Turtle()
+	kary.shape("turtle")
+	kary.color(b)
+	kary.pensize(5)
+
+	kary.forward(100)
+	kary.left(120)
+	kary.forward(100)
+	kary.left(120)
+	kary.forward(100)
+	kary.left(120)
+	kary.forward(100)
+
+	kar=turtle.Turtle()
+	kar.shape("turtle")
+	kar.color(c)
+	kar.pensize(5)
+
+	kar.forward(100)
+	kar.left(-120)
+	kar.forward(100)
+	kar.left(-120)
+	kar.forward(100)
+	kar.left(-120)
+	kar.forward(100)
+
+	ventana.mainloop() 
+![ejercicio30](https://user-images.githubusercontent.com/52546998/60688364-40b03800-9e7a-11e9-885d-4e98ae673a25.PNG)
+
+#### Ejercicio 31
+	import turtle
+	ventana=turtle.Screen()
+	ventana.bgcolor("black")
+	ventana.title("Hola, Kary bebe")
+
+	omar=turtle.Turtle()
+	kary=turtle.Turtle()
+
+	omar.shape("turtle")
+	omar.color("green")
+	omar.pensize(2)
+
+	kary.shape("turtle")
+	kary.color("red")
+	kary.pensize(2)
+
+	omar.speed(9)
+	kary.speed(10)
+
+	omar.penup()
+	kary.penup()
+	omar.setpos(0,-50)
+	omar.pendown()
+	omar.circle(50)
+	kary.setpos(0,-100)
+	kary.pendown()
+	kary.circle(100)
+
+	ventana.mainloop()
+![ejercicio31](https://user-images.githubusercontent.com/52546998/60688371-44dc5580-9e7a-11e9-8036-38be18baca8b.PNG)
+
+#### Ejercicio 32
+	import turtle
+	a=int(input('Introdizca el numero de circulos que desea:'))
+
+	ventana = turtle.Screen ()
+	ventana.bgcolor("lightgreen")
+	ventana.title("Hola")
+
+	rafael = turtle.Turtle()
+	rafael.shape("turtle")
+	rafael.color ("blue")
+	rafael.pensize (2)
+
+	rafael.speed(1)
+
+	for i in range(a):
+  
+	  rafael.penup()
+	  rafael.setpos(0,-(i*10))
+	  rafael.pendown()
+	  rafael.circle(i*10)
+  
+	ventana.mainloop()
+![ejercicio32](https://user-images.githubusercontent.com/52546998/60688372-486fdc80-9e7a-11e9-9ae7-b0c7c5211a4b.PNG)
+
+#### Ejercicio 33
+	import turtle
+
+	ventana= turtle.Screen()
+	ventana.setup(500,500)
+	ventana.tracer(0)
+	ventana.addshape("mario2.gif")
+
+	mario = turtle.Turtle()
+	mario.speed(0)
+	mario.shape("mario2.gif")
+
+	mario.penup()
+	mario.goto(-350,0)
+
+	while True:
+	    ventana.update()
+	    mario.forward(0.10)
+![ejercicio33](https://user-images.githubusercontent.com/52546998/60688375-4c9bfa00-9e7a-11e9-8a3d-bf830c3930dd.PNG)
+    
+#### Ejercicio 34
+	import turtle
+
+	window= turtle.Screen()
+	window.addshape("mario2.gif")
+	border= turtle.Turtle()
+	border.speed(0)
+	border.up()
+	border.hideturtle()
+	border.pensize(0)
+	border.color('white')
+	border.goto(300,300)
+	border.down()
+	border.goto(300,-300)
+	border.goto(-300,-300)
+	border.goto(-300,300)
+	border.goto(300,300)
+
+
+	camino=turtle.Turtle()
+	camino.speed(20)
+	camino.shape("mario2.gif")
+	
+	camino.up()
+	dx=1
+	
+	while True:
+	    x,y= camino.position()
+	    if x+dx>=300 or x+dx<=-300:
+	        dx=-dx
+   
+	    camino.goto(x+dx,y)
+
+	window.mainloop()
+![ejercicio34](https://user-images.githubusercontent.com/52546998/60688377-5160ae00-9e7a-11e9-9712-156d98edbe4a.PNG)
+
+#### Ejercicio 35
+	class Coche(object):
+	    def __init__(self,gasolina):
+	        self.gasolina = gasolina
+	   
+	    def arrancar(self):
+	        if self.gasolina > 0:
+	            print("Arranca")
+	        else:
+	            print("No arranca")
+    
+	    def conducir(self):
+	        if self.gasolina > 0:
+	            self.gasolina = self.gasolina - 1
+	            print("Quedan", self.gasolina, "litros")
+	        else:
+	            print("No se mueve")
+    
+	vocho = Coche(5)
+	tsuru = Coche(3)
+
+	vocho.arrancar()
+	vocho.conducir()
+	vocho.conducir()
+	vocho.conducir()
+	vocho.conducir()
+	vocho.conducir()
+	vocho.conducir()
+	tsuru.arrancar()
+	tsuru.conducir() 
+![ejercicio35](https://user-images.githubusercontent.com/52546998/60688378-558ccb80-9e7a-11e9-9e6c-570559703122.PNG)
+
+#### Ejercicio 36
+	class Triangulo(object):
+	    def __init__(self,angulo1,angulo2,angulo3):
+	        self.angulo1 = angulo1
+	        self.angulo2 = angulo2
+	        self.angulo3 = angulo3
+        
+	    def checarangulo(self):
+	        if (self.angulo1+self.angulo2+self.angulo3) == 180:
+	            print("Es un triangulo")
+	        else:
+	            print("No es un trianfulo")
+            
+	Mitriangulo=Triangulo(90,30,60)
+	
+	Mitriangulo.checarangulo()
+![ejercicio36](https://user-images.githubusercontent.com/52546998/60688380-59205280-9e7a-11e9-8673-fa52244fc579.PNG)
+
+#### Ejercicio 38
+	class Cancion(object):
+	    def __init__(self,letra):
+	        self.letra = letra
+	    
+	    def cantame(self):
+	        print(self.letra)
+
+	micumpleanos=Cancion(["...que cantaba el rey David," " hoy por ser dia de tu santo," " te las cantamos a ti."])
+
+	micumpleanos.cantame()
+![ejercicio38](https://user-images.githubusercontent.com/52546998/60688385-5de50680-9e7a-11e9-95d2-fe3449f81edc.PNG)
+
+#### Ejercicio 39
+	import turtle
+
+	ventana = turtle.Screen()
+	ventana.bgcolor('blue')
+	ventana.title('ventana')
+
+	a = turtle.Turtle()
+	d=50
+	a.forward(d)
+	a.left(90)
+	a.forward(d)
+	a.left(90)
+	a.forward(d)
+	a.left(90)
+	a.forward(d)
+	a.left(90)
+
+	ventana.mainloop()
+![ejercicio39](https://user-images.githubusercontent.com/52546998/60688390-62112400-9e7a-11e9-92cc-942668a5d4dc.PNG)
+
+#### Ejercicio 40
+	import turtle
+
+	ventana=turtle.Screen()
+	ventana.bgcolor('green')
+	ventana.title('Funciones')
+
+	omar = turtle.Turtle()
+	d = 50
+
+	for i in range(4):
+	    omar.forward(d)
+	    omar.left(90)
+
+	ventana.mainloop()
+![ejercicio40](https://user-images.githubusercontent.com/52546998/60688392-65a4ab00-9e7a-11e9-9fcf-1a25559dc8dc.PNG)
+
+#### Ejercicio 41
+	import turtle
+
+	def dibujar_cuadro(tur, d):
+	    
+	    for i in range(4):
+	        tur.forward(d)
+	        tur.left(90)
+        
+	ventana=turtle.Screen()
+	ventana.bgcolor('blue')
+	ventana.title('funciones')
+
+	a=turtle.Turtle()
+	b=turtle.Turtle()
+	dibujar_cuadro(a, 50)
+	dibujar_cuadro(b, 200)
+
+	ventana.mainloop()
+![ejercicio41](https://user-images.githubusercontent.com/52546998/60688394-69d0c880-9e7a-11e9-8db8-f01b4faa98e9.PNG)
+
+#### Ejercicio 42
+	import turtle
+	def dibujar_cuadro(tur,d):
+	    for i in ['red','purple','hotpink','blue']:
+	        tur.color(i)
+	        tur.forward(d)
+	        tur.left(90)
+
+	ventana = turtle.Screen()
+	ventana.bgcolor('lightgreen')
+	ventana.title('funciones')
+
+	alex= turtle.Turtle()
+	jessie=turtle.Turtle()
+
+	dibujar_cuadro(alex,50)
+	dibujar_cuadro(jessie,200)
+	ventana.mainloop()
+![ejercicio42](https://user-images.githubusercontent.com/52546998/60688396-6d644f80-9e7a-11e9-8648-7a91579d519e.PNG)
+
+#### Ejercicio 43
+
+	import turtle
+	
+	def dibujar_multiples_cuadros(tur,d):
+	    for i in ['red','purple','hotpink','blue']:
+	        tur.color(i)
+	        tur.forward(d)
+	        tur.left(90)
+
+	ventana = turtle.Screen()
+	ventana.bgcolor('lightgreen')
+	ventana.title('funciones')
+
+	a= turtle.Turtle()
+	a.pensize(3)
+
+	d= 20
+	for i in range(15):
+	    dibujar_multiples_cuadros(a, d)
+	    d= d + 10
+	    a.forward(10)
+	    a.right(18)
+
+
+	ventana.mainloop()
+![ejercicio43](https://user-images.githubusercontent.com/52546998/60688398-70f7d680-9e7a-11e9-86c3-1c5ff333a53e.PNG)
+
+#### Ejercicio 44
+	import turtle
+
+
+	def dibujar_cuadro_seguir(tur, p):
+	    for i in range(4):
+	        tur.forward(20)
+	        tur.left(90)
+    
+
+	ventana=turtle.Screen()
+	ventana.bgcolor('red')
+	ventana.title('funciones')
+
+	alex=turtle.Turtle()
+	alex.pensize(5)
+	alex.speed(2)
+
+	p=30
+
+	for i in range(5):
+	    dibujar_cuadro_seguir(alex, 5)
+
+	    alex.penup()
+	    alex.setpos(p,0)
+	    alex.pendown()
+	    p=p+30
+    
+	ventana.mainloop()
+![ejercicio44](https://user-images.githubusercontent.com/52546998/60688400-7523f400-9e7a-11e9-9f9e-ce795bfc0693.PNG)
+
+#### Ejercicio 45
+	import turtle
+	def dibujar (tur,d):
+	    for i in range(4):
+	        tur.forward(d)
+	        tur.left(90)     
+	ventana=turtle.Screen()
+	ventana.bgcolor('blue')
+	ventana.title('funciones')
+	alex=turtle.Turtle()
+	alex.pensize(3)
+	m=-10
+	for i in range(20,101,20):
+	    dibujar(alex,i)
+	    alex.penup()
+	    alex.goto(m,m)
+	    alex.pendown()
+	    m=m-10 
+	ventana.mainloop()
+![ejercicio45](https://user-images.githubusercontent.com/52546998/60688403-78b77b00-9e7a-11e9-90f9-d0a6b8667af9.PNG)
+
+#### Ejercicio 46
+	import turtle
+	def dibujar(tur, d):
+    	    for i in range(8):
+	        tur.forward(d)
+	        tur.left(45)        
+	ventana=turtle.Screen()
+	ventana.bgcolor('blue')
+	ventana.title('funciones')
+	a=turtle.Turtle()
+	dibujar(a, 50)
+	ventana.mainloop()
+![ejercicio46](https://user-images.githubusercontent.com/52546998/60688407-7c4b0200-9e7a-11e9-8147-0fa551670e9f.PNG)
+
+#### Ejercicio 47
+	import turtle
+	def dibujar_cuadro_caracol(tur, d):
+	    for i in  ['red','blue','yellow','red']:
+	        tur.color(i)
+	        tur.forward(d)
+	        tur.left(90)
+    	ventana=turtle.Screen()
+	ventana.bgcolor('black')
+	ventana.title('funciones')
+	alex=turtle.Turtle()
+	alex.pensize(2)
+	alex.speed(100)
+	d=100
+	for i in range(20):
+	    dibujar_cuadro_caracol(alex, d)    
+	    alex.forward(10)
+	    alex.right(18)
+	    alex.setpos(0, 0)
+	ventana.mainloop()
+![ejercicio47](https://user-images.githubusercontent.com/52546998/60688411-80771f80-9e7a-11e9-90a2-4164b2133deb.PNG)
+
+#### Ejercicio 48
+	import turtle
+	def cuadrado(tur, d):
+	    for i in  range(80):   
+	        tur.forward(d)
+	        tur.left(90)
+	        d=d+5        
+	ventana=turtle.Screen()
+	ventana.bgcolor('yellow')
+	ventana.title('funciones')
+	d=15
+	alex=turtle.Turtle()
+	alex.speed(10)
+	cuadrado(alex, d)
+	ventana.mainloop()
+![ejercicio48](https://user-images.githubusercontent.com/52546998/60688413-84a33d00-9e7a-11e9-92d0-7cb63d8b3bf8.PNG)
+
+#### Ejercicio 49
+	import turtle
+	def cuadrado(tur, d):
+	    f=90
+	    for i in  range(80): 
+	        tur.forward(d)
+	        tur.left(f)
+	        d=d+5
+	        f=f+0.02
+	ventana=turtle.Screen()
+	ventana.bgcolor('blue')
+	ventana.title('funciones')	
+	d=15
+	alex=turtle.Turtle()
+	alex.speed(10)	
+	cuadrado(alex, d)
+	ventana.mainloop()
+![ejercicio49](https://user-images.githubusercontent.com/52546998/60688415-88cf5a80-9e7a-11e9-9d0c-b02a444b343f.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
